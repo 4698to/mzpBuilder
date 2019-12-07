@@ -1,3 +1,5 @@
+--E-mail:738746223@qq.com
+--UTF8
 try(DestroyDialog mzpBuilder_Tools)catch()
 rollout mzpBuilder_Tools "mzpBuilder"
 (
@@ -31,7 +33,7 @@ rollout mzpBuilder_Tools "mzpBuilder"
     group "mzp 输出" (
         edittext edtOutputFilePath "" fieldWidth:565 height:22 across:2
         button btn_open_out_path "..." width:20 height:22 align:#right
-        button btnExportOutputFile "Export .mzp" width:595 height:32
+        button btnExportOutputFile "Export .mzp" width:595 height:32 enabled:false
         -- Group body.
     )
     local comm_text = #("copy","treeCopy")
